@@ -69,7 +69,7 @@ header nav ul {
 
 .hero {
     height: calc(100vh - 80px);
-    min-height: 430px;
+    min-height: 500px;
     display: grid;
 }
 .hero_background-image {

@@ -92,3 +92,9 @@
         font-size: 22px;
     }
 }
+
+@media screen and (max-height:650px) {
+    .hero{
+        height: 600px;
+    }
+}
