@@ -182,6 +182,7 @@ let platosDelMenu = [
         nombreArchivo: "26.jpg",
     }
 ]
+
 section2 = document.getElementById("section-2")
 menuAlmuerzo = platosDelMenu.filter( plato => plato.tipo == "almuerzo")
 menuDesayuno = platosDelMenu.filter( plato => plato.tipo == "desayuno")
@@ -201,14 +202,38 @@ function constructorDePlato(plato) {
     section2.innerHTML += elemento
 }
 
-
 function construirMenu(menu) {
     section2.innerHTML = ""
     menu.forEach( plato => {
         constructorDePlato(plato)
     })
 }
+
 construirMenu(platosDelMenu)
+
+botonMenuCompleto = document.getElementById("menu_completo")
+botonMenuCompleto.addEventListener('click', (e) => {
+    e.preventDefault()
+    construirMenu(platosDelMenu)
+})
+
+botonMenuDesayuno = document.getElementById("menu_desayuno")
+botonMenuDesayuno.addEventListener('click', (e) => {
+    e.preventDefault()
+    construirMenu(menuDesayuno)
+})
+
+botonMenuPostre = document.getElementById("menu_postre")
+botonMenuPostre.addEventListener('click', (e) => {
+    e.preventDefault()
+    construirMenu(menuPostre)
+})
+
+botonMenuAlmuerzo = document.getElementById("menu_almuerzo")
+botonMenuAlmuerzo.addEventListener('click', (e) => {
+    e.preventDefault()
+    construirMenu(menuAlmuerzo)
+})
 
 
 
