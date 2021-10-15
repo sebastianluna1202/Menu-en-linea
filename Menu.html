@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Nora's</title>
-    <link rel="stylesheet" href="./styles/Menu-desktop.css">
-    <link rel="stylesheet" href="./styles/Menu-mobile.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú del restaurante Nora's">
+  <title>Restaurante Nora's</title>
+  <link rel="stylesheet" href="./styles/component/variables.css">
+  <link rel="stylesheet" href="./styles/component/header.css">
+  <link rel="stylesheet" href="./styles/component/footer.css">
+  <link rel="stylesheet" href="./styles/menu.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <h2>NORA'S</h2>
-            <img id="iconoDeMenu" class="logo_menu" src="./assets/Iconos/Iconos/menu.png">
-            <ul id="menuDesplegable" class="nav hidden">
-                <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#footer">Redes sociales</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>  
-        <div class="section-1">
-            <div id="menu_completo"><img src="./assets/Iconos/Iconos/icono_menu.png"><h2 class="hidden2">MENÚ</h2></div>
-            <div id="menu_desayuno"><img src="./assets/Iconos/Iconos/icono_desayuno.png"><h2 class="hidden2">DESAYUNOS</h2></div>
-            <div id="menu_almuerzo"><img src="./assets/Iconos/Iconos/icono_almuerzo.png"><h2 class="hidden2">ALMUERZOS</h2></div>
-            <div id="menu_postre"><img src="./assets/Iconos/Iconos/icono_postres.png"><h2 class="hidden2">POSTRES</h2></div>
-        </div>
-        <div id="section-2" class="section-2"></div>
-    </main>
-    <footer id="footer">
-        <img src="./assets/Imagenes/footer.jpg" alt="">
-        <div class="content">
-            <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Linkedin</li>
-            </ul>
-            <div class="logo-footer"></div>
-        </div>
-    </footer>
-    <script src="./js/desplegar_menu.js"></script>
-    <script src="./js/filtrar_platos.js" ></script>
+  <header>
+    <h2>NORA'S</h2>
+    <nav>
+      <div class="menu-icon">
+        <span class="first-span"></span>
+        <span class="seccond-span"></span>
+        <span class="third-span"></span>
+      </div>
+      <ul class="nav hidden display-none">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#section-2">Menu</a></li>
+        <li><a href="#footer">Redes sociales</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>  
+    <div class="section-1">
+    </div>
+    <div id="section-2" class="section-2"></div>
+  </main>
+  <footer id="footer">
+    <img src="./assets/images/footer.jpg" alt="">
+    <div class="content">
+      <ul>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Linkedin</li>
+      </ul>
+      <img class="logo-footer" src="./assets/icons/logo/logo.png" alt="logo de Nora's">
+    </div>
+  </footer>
+  <script src="./js/desplegar_menu.js"></script>
+  <script src="./js/filtrar_platos.js" ></script>
 </body>

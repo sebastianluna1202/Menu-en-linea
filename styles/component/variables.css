@@ -1,0 +1,13 @@
+:root {
+  --yellow: #ffd000;
+  --green: #6eb41d;
+  --green-light: #7ccf1d;
+  --grey: #1b1212;
+  --gray-light: #e7e7e7;
+  --white: #ffffff;
+  --red: #ec0808;
+  --box-shadow: 0px 0px 10px .2px #27272741;
+  --cursive-font: 'Courgette', cursive;
+  --montserrat-font: 'Montserrat', sans-serif;
+  --hexagon: polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
+}

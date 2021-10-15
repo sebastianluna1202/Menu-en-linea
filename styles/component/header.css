@@ -1,0 +1,121 @@
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: 0 40px;
+  z-index: 3;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grey);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0px;
+}
+header h2 {
+  font-size: 40px;
+  color: var(--white);
+  font-weight: 700;
+}
+header nav .menu-icon {
+  display: none;
+}
+header nav ul li a {
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--white);
+} 
+header nav ul a:hover {
+  text-decoration: underline;
+} 
+header nav ul li {
+  list-style: none;
+  margin-left: 32px;
+} 
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+@media screen and (max-width:767px) {
+  header {
+    padding: 0 20px;
+  }
+  header nav .menu-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header nav .menu-icon span {
+    background-color: var(--white);
+    height: 17%;
+    transition: 300ms;
+  }
+  header nav .menu-icon span:nth-child(1) {  
+    transform-origin: top left ;
+  }
+  header nav .menu-icon span:nth-child(3) {
+    transform-origin: bottom left;
+  }
+  header nav .active span:nth-child(2) {
+    transform: translateX(-5px);
+    opacity: 0;
+    transition: 300ms;
+  }
+  header nav .active span:nth-child(1) {
+    transform: rotate(45deg) translateX(6px) ;
+    transition: 300ms;
+  }
+  header nav .active span:nth-child(3) {
+    transform: rotate(-45deg) translateX(6px);
+    transition: 300ms;
+  }
+  header nav {
+    display: flex;
+    align-self: center;
+    margin-right: 0px;
+  } 
+  header nav ul {
+    display: inline;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 80px;
+  } 
+  header nav ul li {
+    margin: 0px;
+    border-bottom: solid white;
+    list-style: none;
+    background-color: var(--grey);
+  } 
+  header nav ul li a {
+    padding: 15px 25px
+  }
+  header nav li a:hover {
+    padding-left: 35px;
+  }
+  header nav ul li:hover a {
+    background-color: var(--green);
+    transition: .5s;
+  } 
+  header .nav {
+    transition: 300ms;
+  }
+  .hidden {
+    opacity: 0;
+    transition: 300ms;
+  } 
+  .display-none {
+    display: none;
+    transition: 300ms;
+  }
+}
+
